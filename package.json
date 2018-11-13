@@ -1,0 +1,30 @@
+{
+  "name": "@fourdigit/stylelint-config-fourdigit",
+  "version": "0.0.0",
+  "description": "The shareable stylelint config for Fourdigit production.",
+  "keywords": [
+    "stylelint",
+    "stylelint-config"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fourdigit/stylelint-config-fourdigit.git"
+  },
+  "author": "Fourdigit Inc.",
+  "license": "MIT",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-order": "^1.0.0",
+    "stylelint-scss": "^3.4.0"
+  },
+  "peerDependencies": {
+    "stylelint": "^8.3.0 || ^9.0.0"
+  },
+  "devDependencies": {
+    "stylelint": "^9.8.0"
+  }
+}
