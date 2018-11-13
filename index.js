@@ -22,7 +22,6 @@ module.exports = {
     'declaration-block-trailing-semicolon': 'always',
     'declaration-colon-space-before': 'never',
     'declaration-colon-space-after': 'always',
-    'prettier/prettier': true,
     'property-no-vendor-prefix': true,
     'value-no-vendor-prefix': true,
     'number-leading-zero': 'never',
