@@ -12,7 +12,10 @@ Installation
 ------------
 
 ```bash
-npm install @fourdigit/stylelint-config-fourdigit --save-dev
+// peerDependencies
+npm i -D stylelint stylelint-config-prettier stylelint-config-standard stylelint-order stylelint-scss
+
+npm i -D @fourdigit/stylelint-config-fourdigit
 ```
 
 
