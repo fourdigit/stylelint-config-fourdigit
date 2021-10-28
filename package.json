@@ -10,6 +10,10 @@
     "type": "git",
     "url": "https://github.com/fourdigit/stylelint-config-fourdigit.git"
   },
+  "bugs": {
+    "url": "https://github.com/fourdigit/stylelint-config-fourdigit/issues"
+  },
+  "homepage": "https://github.com/fourdigit/stylelint-config-fourdigit#readme",
   "author": "FOURDIGIT Inc.",
   "license": "MIT",
   "main": "index.js",
@@ -17,7 +21,8 @@
     "index.js"
   ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "fix": "stylelint ./spec/mocks/valid.css --fix --config ./index.js"
   },
   "jest": {
     "preset": "jest-preset-stylelint"
