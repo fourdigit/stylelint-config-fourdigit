@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update All packages
 - Change stylelint extends
 - Remove stylelint plugins
+
 #### ⚠️BREAKING CHANGES
 
 [`stylelint-config-standard@23.0.0`](https://github.com/stylelint/stylelint-config-standard/releases/tag/23.0.0)
