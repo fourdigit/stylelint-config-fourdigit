@@ -4,12 +4,14 @@
  */
 const stylelintConfig = {
   extends: [
-    'stylelint-config-standard',
+    'stylelint-config-standard-scss',
     'stylelint-config-prettier'
   ],
   plugins: [
     'stylelint-order',
-    'stylelint-scss'
+  ],
+  ignoreFiles: [
+    '**/node_modules/**',
   ],
   rules: {
     'at-rule-no-unknown': null,
@@ -30,7 +32,6 @@ const stylelintConfig = {
     'media-feature-parentheses-space-inside': 'never',
     'media-feature-range-operator-space-after': 'never',
     'media-feature-range-operator-space-before': 'never',
-    'number-leading-zero': 'never',
     'order/order': ['custom-properties', 'declarations'], // Sort alphabetically
     'order/properties-alphabetical-order': true,
     'property-no-vendor-prefix': true,
