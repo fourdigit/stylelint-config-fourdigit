@@ -6,16 +6,14 @@
 Extends
 - [`stylelint-config-standard-scss`](https://github.com/stylelint-scss/stylelint-config-standard-scss)
 - [`stylelint-config-prettier`](https://github.com/prettier/stylelint-config-prettier)
-
-and uses following plugins.
-* [`stylelint-order`]('https://github.com/hudochenkov/stylelint-order')
+- [`stylelint-config-recess-order`](https://github.com/stormwarning/stylelint-config-recess-order)
 
 Installation
 ------------
 
 ```bash
 // peerDependencies
-npm i -D stylelint stylelint stylelint-config-prettier stylelint-config-standard-scss stylelint-order
+npm i -D stylelint stylelint stylelint-config-prettier stylelint-config-standard-scss stylelint-config-recess-order
 
 npm i -D @fourdigit/stylelint-config-fourdigit
 ```
