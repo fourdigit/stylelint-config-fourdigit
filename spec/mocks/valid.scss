@@ -23,8 +23,8 @@
 
 @mixin corner-icon($name, $top-or-bottom, $left-or-right) {
   .icon-#{$name} {
-    background-image: url('/icons/#{$name}.svg');
     position: absolute;
+    background-image: url('/icons/#{$name}.svg');
     #{$top-or-bottom}: 0;
     #{$left-or-right}: 0;
   }
@@ -54,8 +54,8 @@
 }
 
 %message-shared {
-  border: 1px solid #cccccc;
   color: #333333;
+  border: 1px solid #cccccc;
 }
 
 $-private-size: 10rem;
@@ -72,9 +72,9 @@ $theme-colors: (
 
 .selector-1,
 .selector-3[type='text'] {
-  background: linear-gradient(#ffffff, rgb(0 0 0 / 80%));
-  color: base.$primary-color;
   top: calc(100% - 2rem) !important;
+  color: base.$primary-color;
+  background: linear-gradient(#ffffff, rgb(0 0 0 / 80%));
 
   a {
     width: math.div(300px, 960px) * 100%;
@@ -129,6 +129,7 @@ $theme-colors: (
   screen and (min-resolution:192dpi),
   screen and (min-resolution:2dppx) {
   .selector {
+    height: 10rem;
     background-image:
       repeating-linear-gradient(
         -45deg,
@@ -136,13 +137,12 @@ $theme-colors: (
         #ffffff 25px,
         rgb(255 255 255 / 100%) 50px
       );
-    height: 10rem;
   }
   /* Flush nested single line comment */
   .selector:after {
+    content: '→';
     background-color: map.get($theme-colors, 'warning');
     background-image: url('x.svg');
-    content: '→';
   }
 }
 
