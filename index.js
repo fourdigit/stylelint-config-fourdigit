@@ -5,6 +5,7 @@
 const stylelintConfig = {
   extends: [
     'stylelint-config-standard-scss',
+    'stylelint-config-recess-order',
     'stylelint-config-prettier'
   ],
   plugins: [
@@ -32,8 +33,6 @@ const stylelintConfig = {
     'media-feature-parentheses-space-inside': 'never',
     'media-feature-range-operator-space-after': 'never',
     'media-feature-range-operator-space-before': 'never',
-    'order/order': ['custom-properties', 'declarations'], // Sort alphabetically
-    'order/properties-alphabetical-order': true,
     'property-no-vendor-prefix': true,
     'rule-empty-line-before': ['always', { ignore: ['first-nested', 'after-comment'] }],
     'scss/at-rule-no-unknown': true,
