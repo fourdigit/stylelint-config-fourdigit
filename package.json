@@ -1,6 +1,6 @@
 {
   "name": "@fourdigit/stylelint-config-fourdigit",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "The shareable stylelint config for Fourdigit production.",
   "keywords": [
     "stylelint",
@@ -10,6 +10,10 @@
     "type": "git",
     "url": "https://github.com/fourdigit/stylelint-config-fourdigit.git"
   },
+  "bugs": {
+    "url": "https://github.com/fourdigit/stylelint-config-fourdigit/issues"
+  },
+  "homepage": "https://github.com/fourdigit/stylelint-config-fourdigit#readme",
   "author": "FOURDIGIT Inc.",
   "license": "MIT",
   "main": "index.js",
@@ -17,22 +21,24 @@
     "index.js"
   ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "fix": "stylelint ./spec/mocks/valid.{css,scss} --fix --config ./index.js"
   },
   "jest": {
     "preset": "jest-preset-stylelint"
   },
-  "dependencies": {
-    "stylelint-config-standard": "^18.2.0",
-    "stylelint-order": "^1.0.0",
-    "stylelint-scss": "^3.4.0"
+  "devDependencies": {
+    "jest": "^27.3.1",
+    "jest-preset-stylelint": "^4.1.1",
+    "stylelint": "^14.0.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard-scss": "^2.0.1"
   },
   "peerDependencies": {
-    "stylelint": "^8.3.0 || ^9.0.0"
-  },
-  "devDependencies": {
-    "jest": "^23.6.0",
-    "jest-preset-stylelint": "^1.3.0",
-    "stylelint": "^9.8.0"
+    "stylelint": "^14.0.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard-scss": "^2.0.1"
   }
 }
