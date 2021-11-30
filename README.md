@@ -1,6 +1,8 @@
 @fourdigit/stylelint-config-fourdigit
 =====================================
 
+[![GitHub license](https://img.shields.io/github/license/fourdigit/stylelint-config-fourdigit)](https://github.com/fourdigit/stylelint-config-fourdigit/blob/master/LICENSE)
+
 > The shareable stylelint config for Fourdigit production.
 
 Extends
