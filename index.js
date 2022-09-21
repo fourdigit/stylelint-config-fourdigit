@@ -31,8 +31,6 @@ const stylelintConfig = {
     'media-feature-colon-space-before': 'never',
     'media-feature-name-no-vendor-prefix': true,
     'media-feature-parentheses-space-inside': 'never',
-    'media-feature-range-operator-space-after': 'never',
-    'media-feature-range-operator-space-before': 'never',
     'property-no-vendor-prefix': true,
     'rule-empty-line-before': ['always', { ignore: ['first-nested', 'after-comment'] }],
     'scss/at-rule-no-unknown': true,

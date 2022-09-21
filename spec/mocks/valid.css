@@ -1,21 +1,25 @@
-@import url('x.css');
-@import url('y.css');
+@import 'x.css';
+@import 'y.css';
 /**
  * Multi-line comment
  */
+
+:root {
+  --brand-red: hsl(5deg 10% 40%);
+}
 
 .selector-1,
 .selector-2,
 .selector-3[type='text'] {
   box-sizing: border-box;
   display: block;
-  color: #333333;
+  color: var(--brand-red);
   background: linear-gradient(#ffffff, rgb(0 0 0 / 80%));
 }
 
 .selector-a,
 .selector-b:not(:first-child) {
-  top: calc(calc(1em * 2) / 3);
+  top: calc(100% - 2rem);
   padding: 10px !important;
 }
 
@@ -26,7 +30,7 @@
 .selector-z { width: 30%; }
 /* Single-line comment */
 
-@media (min-width>=60em) {
+@media (width >= 60em) {
   .selector {
     /* Flush to parent comment */
     transform: translate(1, 1) scale(3);
@@ -35,8 +39,8 @@
 
 @media (orientation:portrait), projection and (color) {
   .selector-i + .selector-ii {
-    font-family: helvetica, 'arial black', sans-serif;
-    background: rgb(0 0 0);
+    font-family: Helvetica, 'Arial Black', sans-serif;
+    background: hsl(20deg 25% 33%);
   }
 }
 /* Flush single line comment */
@@ -58,10 +62,17 @@
       0 1px 1px #000000,
       0 1px 0 #ffffff,
       2px 2px 1px 1px #cccccc inset;
+    animation: 3s none fade-in;
   }
   /* Flush nested single line comment */
   .selector:after {
     content: '→';
     background-image: url('x.svg');
   }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+
+  to { opacity: 1; }
 }
