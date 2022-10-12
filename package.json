@@ -1,6 +1,6 @@
 {
   "name": "@fourdigit/stylelint-config-fourdigit",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "The shareable stylelint config for Fourdigit production.",
   "keywords": [
     "stylelint",
@@ -28,17 +28,17 @@
     "preset": "jest-preset-stylelint"
   },
   "devDependencies": {
-    "jest": "^27.3.1",
-    "jest-preset-stylelint": "^4.1.1",
-    "stylelint": "^14.0.1",
+    "jest": "^29.0.3",
+    "jest-preset-stylelint": "^6.0.0",
+    "stylelint": "^14.12.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recess-order": "^3.0.0",
-    "stylelint-config-standard-scss": "^2.0.1"
+    "stylelint-config-standard-scss": "^5.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^14.0.1",
+    "stylelint": "^14.12.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recess-order": "^3.0.0",
-    "stylelint-config-standard-scss": "^2.0.1"
+    "stylelint-config-standard-scss": "^5.0.0"
   }
 }
