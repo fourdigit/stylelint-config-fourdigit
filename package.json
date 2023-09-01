@@ -28,8 +28,8 @@
     "preset": "jest-preset-stylelint"
   },
   "devDependencies": {
-    "jest": "^27.3.1",
-    "jest-preset-stylelint": "^4.1.1",
+    "jest": "^29.6.4",
+    "jest-preset-stylelint": "^6.2.0",
     "stylelint": "^15.10.3",
     "stylelint-config-recess-order": "^4.3.0",
     "stylelint-config-standard-scss": "^10.0.0"
