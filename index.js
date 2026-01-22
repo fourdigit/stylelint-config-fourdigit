@@ -6,45 +6,50 @@ const stylelintConfig = {
   extends: [
     'stylelint-config-standard-scss',
     'stylelint-config-recess-order',
-    'stylelint-config-prettier'
   ],
   plugins: [
+    '@stylistic/stylelint-plugin',
     'stylelint-order',
   ],
   ignoreFiles: [
     '**/node_modules/**',
   ],
   rules: {
+    // Core rules
     'at-rule-no-unknown': null,
-    'color-hex-case': 'lower',
     'color-hex-length': 'long',
+    'media-feature-range-notation': null,
     'color-named': 'never',
     'comment-empty-line-before': 'never',
     'comment-whitespace-inside': 'always',
-    'declaration-block-trailing-semicolon': 'always',
-    'declaration-colon-space-after': 'always-single-line',
-    'declaration-colon-space-before': 'never',
     'font-family-name-quotes': 'always-where-recommended',
     'function-url-quotes': 'always',
-    'indentation': 2,
-    'media-feature-colon-space-after': 'never',
-    'media-feature-colon-space-before': 'never',
     'media-feature-name-no-vendor-prefix': true,
-    'media-feature-parentheses-space-inside': 'never',
     'property-no-vendor-prefix': true,
     'rule-empty-line-before': ['always', { ignore: ['first-nested', 'after-comment'] }],
-    'scss/at-rule-no-unknown': true,
-    'selector-attribute-brackets-space-inside': 'never',
-    'selector-attribute-operator-space-after': 'never',
-    'selector-attribute-operator-space-before': 'never',
     'selector-attribute-quotes': 'always',
-    'selector-combinator-space-after': 'always',
-    'selector-no-qualifying-type': true,
     'selector-no-vendor-prefix': true,
-    'selector-pseudo-class-parentheses-space-inside': 'never',
     'selector-pseudo-element-colon-notation': 'single',
-    'string-quotes': 'single',
     'value-no-vendor-prefix': true,
+
+    // SCSS rules
+    'scss/at-rule-no-unknown': true,
+
+    // Stylistic rules (migrated to @stylistic/stylelint-plugin)
+    '@stylistic/color-hex-case': 'lower',
+    '@stylistic/declaration-block-trailing-semicolon': 'always',
+    '@stylistic/declaration-colon-space-after': 'always-single-line',
+    '@stylistic/declaration-colon-space-before': 'never',
+    '@stylistic/indentation': 2,
+    '@stylistic/media-feature-colon-space-after': 'never',
+    '@stylistic/media-feature-colon-space-before': 'never',
+    '@stylistic/media-feature-parentheses-space-inside': 'never',
+    '@stylistic/selector-attribute-brackets-space-inside': 'never',
+    '@stylistic/selector-attribute-operator-space-after': 'never',
+    '@stylistic/selector-attribute-operator-space-before': 'never',
+    '@stylistic/selector-combinator-space-after': 'always',
+    '@stylistic/selector-pseudo-class-parentheses-space-inside': 'never',
+    '@stylistic/string-quotes': 'single',
   }
 };
 module.exports = stylelintConfig;

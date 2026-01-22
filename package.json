@@ -1,6 +1,6 @@
 {
   "name": "@fourdigit/stylelint-config-fourdigit",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "The shareable stylelint config for Fourdigit production.",
   "keywords": [
     "stylelint",
@@ -20,23 +20,25 @@
   "files": [
     "index.js"
   ],
+  "engines": {
+    "node": ">=18.12.0"
+  },
   "scripts": {
-    "test": "jest",
+    "test": "npm run test:valid && npm run test:invalid",
+    "test:valid": "stylelint ./spec/mocks/valid.{css,scss} --config ./index.js",
+    "test:invalid": "stylelint ./spec/mocks/invalid.{css,scss} --config ./index.js 2>&1 | grep -q 'problems' && echo 'Invalid files correctly detected errors'",
     "fix": "stylelint ./spec/mocks/valid.{css,scss} --fix --config ./index.js"
   },
-  "jest": {
-    "preset": "jest-preset-stylelint"
-  },
   "devDependencies": {
-    "jest": "^29.6.4",
-    "jest-preset-stylelint": "^6.2.0",
-    "stylelint": "^15.10.3",
-    "stylelint-config-recess-order": "^4.3.0",
-    "stylelint-config-standard-scss": "^10.0.0"
+    "@stylistic/stylelint-plugin": "^3.0.0",
+    "stylelint": "^16.8.0",
+    "stylelint-config-recess-order": "^4.6.0",
+    "stylelint-config-standard-scss": "^13.0.0"
   },
   "peerDependencies": {
-    "stylelint": "^15.10.3",
-    "stylelint-config-recess-order": "^4.3.0",
-    "stylelint-config-standard-scss": "^10.0.0"
+    "@stylistic/stylelint-plugin": "^3.0.0",
+    "stylelint": "^16.8.0",
+    "stylelint-config-recess-order": "^4.6.0",
+    "stylelint-config-standard-scss": "^13.0.0"
   }
 }
